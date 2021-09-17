@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\node-testing"
+		},
+		{
+			"path": "..\\node-intro"
+		},
+		{
+			"path": "..\\node-primeros-pasos"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}

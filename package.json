@@ -1,0 +1,14 @@
+{
+  "name": "curso-node",
+  "version": "1.0.0",
+  "description": "curso cifo la violeta 2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "author": "dan m.",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.2.0"
+  }
+}
