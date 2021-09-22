@@ -1,4 +1,4 @@
-const add = function(x, y) {
+export const add = function(x, y) {
     return new Promise((resolve,reject) => {
       if (x == 0 || y == 0) reject(Error("A number cannot be 0"))
       let sum = x + y;
@@ -11,7 +11,7 @@ const add = function(x, y) {
     });
   };
 
-const exp = (num) => {
+export const exp = (num) => {
     return new Promise((resolve,reject) => {
         let result = Math.pow(num, 2);
         if (result <= 100) {
@@ -48,3 +48,4 @@ export const promiseFn = (a,b)=>{
             }
     }, 1000)
 })}
+
