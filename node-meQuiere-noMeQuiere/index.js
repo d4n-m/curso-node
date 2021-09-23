@@ -14,7 +14,7 @@
 
 import { red, blue, bold } from 'nanocolors'
 
-var numPetals = Math.floor(Math.random() * 9) + 1;
+const numPetals = Math.floor(Math.random() * 9) + 1;
 
 async function deshojar() {
     let promise = new Promise((resolve, reject) => {
@@ -43,7 +43,7 @@ async function arrancar(petals) {
                 count+=1
             }
         }  
-    console.log('✔ Arranqué un pétalo');
+    // console.log('✔ Arranqué un pétalo');
     }resolve(message)
 })
     let result = await promise; 
