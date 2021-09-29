@@ -19,4 +19,4 @@ const upperCaseTr = new Transform({
         callback();
 }})
 
-rstream.pipe(upperCaseTr).pipe(wstream).write;
+rstream.pipe(upperCaseTr).pipe(wstream);
