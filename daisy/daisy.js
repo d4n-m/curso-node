@@ -1,12 +1,16 @@
 
-import chalk from 'chalk';
+// import chalk from 'chalk';
+// import  { red, blue } from 'nanocolors';
+const nanocolors = require('./node_modules/nanocolors/');
 
-export class DaisyGame {
+
+// console.log(nanocolors.blue("okkk"));
+class DaisyGame {
     async play() {
         try {
             this.message = 'me quiere';
             let result = await this.deshojarMargarita();
-            printBlue(result);
+            this.printBlue(result);
         } catch (error) {
             console.log(error);
         }
@@ -42,11 +46,11 @@ export class DaisyGame {
     }
 
     printBlue(message) {
-        console.log(chalk.blue(message));
+        console.log(blue.blue(message));
     }
 
     printRed() {
-        console.log(chalk.red(message));
+        console.log(red(message));
     }
 }
 
@@ -55,3 +59,4 @@ export class DaisyGame {
 // console.log(game.age);
 // game.play();
 
+module.exports = { DaisyGame, nanocolors }

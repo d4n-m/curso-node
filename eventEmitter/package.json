@@ -1,16 +1,16 @@
 {
-  "name": "daisy",
+  "name": "eventemitter",
   "version": "1.0.0",
-  "main": "daisy.js",
-    "scripts": {
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
-    "jest": "^27.2.1"
-  },
-  "keywords": [],
-  "description": ""
+    "jest": "^27.2.4"
+  }
 }
