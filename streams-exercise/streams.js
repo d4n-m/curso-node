@@ -7,13 +7,15 @@ import { Transform } from 'stream';
 const rstream = process.stdin;
 const wstream = fs.createWriteStream("./new_file.txt");
 
+// process.stdin.setRawMode(true);
+
 console.log("\nEnd with triple-dots. Enter input: ");
 
 const upperCaseTr = new Transform({
     transform(chunk, encoding, callback){
         // End with triple-dots
         if (chunk.toString().includes('...')){
-            process.exit()
+            process.kill(process.pid, 'SIGTERM')
         }
         this.push(chunk.toString().toUpperCase());
         callback();
