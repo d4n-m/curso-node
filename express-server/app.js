@@ -23,7 +23,7 @@ app.use((req,res,next)=>{
 
 app.post('/', (req,res)=>{
     let body= req.body;
-    res.send(200, body);
+    res.status(200).send(body);
 })
 
 app.put('/', (req,res)=> res.send('Hola PUT!'));

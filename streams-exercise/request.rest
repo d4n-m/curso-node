@@ -12,11 +12,11 @@ GET  http://localhost:3000/home
 
 ######
 POST   http://localhost:3000/
-# Content-Type: application/json
-ping
-# {
-#     "key":"value"
-# }
+Content-Type: application/json
+
+{
+    "key":"value"
+}
 
 
 ######
