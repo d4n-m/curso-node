@@ -8,8 +8,7 @@ ping
 GET  http://localhost:3000/api/v1/users/
 
 ######
-GET  http://localhost:3000/home
-
+GET  http://localhost:3000/movies/
 ######
 POST   http://localhost:3000/
 Content-Type: application/json
