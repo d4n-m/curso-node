@@ -4,9 +4,12 @@ import postController from "../controllers/movies/postController.js";
 import getController from "../controllers/movies/getController.js";
 import putController from "../controllers/movies/putController.js";
 import deleteController from "../controllers/movies/deleteController.js";
+import authUser from '../../middlewares/authHandler.js';
 
 // const moviesRoutes = express.Router();
 const router = Router();
+
+router.use(authUser);
 
 router.route('/')
     .get(getController.getAllMovies)

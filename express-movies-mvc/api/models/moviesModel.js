@@ -1,4 +1,4 @@
-import movies from '../../datos/movies.js'
+import movies from '../../data/movies.js'
 
 class MoviesModel {
     getMovies() {
